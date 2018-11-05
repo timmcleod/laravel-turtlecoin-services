@@ -54,16 +54,10 @@ class StartWalletService extends Command
             return;
         }
 
-        if (!$this->files->exists($walletDir))
-        {
-            $this->info(shell_exec("mkdir $walletDir"));
-        }
-
         if (!$this->files->exists("$walletDir/$walletFilename"))
         {
-            $this->info("Generating wallet container...");
-            $this->info(shell_exec("$walletService -w $walletDir/$walletFilename -p $walletPassword -l $walletDir/service.log -g"));
-            $this->info("Wallet container generated.");
+            $this->error('You must create a wallet before starting the wallet service.');
+            $this->info('Create a new wallet using: php artisan turtlecoin:create-wallet');
         }
 
         $this->info("Starting wallet service...");

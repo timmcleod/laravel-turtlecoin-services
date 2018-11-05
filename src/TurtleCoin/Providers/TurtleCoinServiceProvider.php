@@ -3,6 +3,7 @@
 namespace TurtleCoin\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use TurtleCoin\Console\Commands\CreateWallet;
 use TurtleCoin\Console\Commands\StartWalletService;
 use TurtleCoin\TurtleCoinServices;
 
@@ -23,7 +24,8 @@ class TurtleCoinServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole())
         {
             $this->commands([
-                StartWalletService::class
+                CreateWallet::class,
+                StartWalletService::class,
             ]);
         }
 
