@@ -14,9 +14,9 @@ quick and easy to get started with all of the TurtleCoin services (TurtleCoind a
 
 ## Install TurtleCoin Services for Laravel
 
-This package requires PHP >=7.1.3 and has been tested with Laravel 5.7.
+This package requires PHP >=7.1.3.
 
-First, require this package with composer:
+First, require this package with composer in your Laravel 5.x project:
 ```
 composer require turtlecoin/laravel-turtlecoin-services
 ```
