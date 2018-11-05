@@ -1,0 +1,44 @@
+{
+  "name": "turtlecoin/laravel-turtlecoin-services",
+  "description": "A Laravel package for running and working with TurtleCoin services and APIs",
+  "keywords": [
+    "TurtleCoin",
+    "PHP",
+    "Laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tim McLeod",
+      "email": "tim@timmcleod.com"
+    }
+  ],
+  "require": {
+    "turtlecoin/turtlecoin-rpc-php": "^2.1",
+    "laravel/framework": "^5.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TurtleCoin\\": "src/TurtleCoin"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TurtleCoin\\Providers\\TurtleCoinServiceProvider"
+      ],
+      "aliases": {
+        "TC": "TurtleCoin\\Support\\Facades\\TurtleCoinFacade"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
