@@ -36,7 +36,7 @@
         "TurtleCoin\\Providers\\TurtleCoinServiceProvider"
       ],
       "aliases": {
-        "TC": "TurtleCoin\\Support\\Facades\\TurtleCoinFacade"
+        "TurtleCoin": "TurtleCoin\\Support\\Facades\\TurtleCoinFacade"
       }
     }
   },
