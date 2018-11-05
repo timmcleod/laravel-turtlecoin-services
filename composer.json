@@ -15,7 +15,7 @@
   ],
   "require": {
     "php": ">=7.1.3",
-    "turtlecoin/turtlecoin-rpc-php": "2.1"
+    "turtlecoin/turtlecoin-rpc-php": "2.1.*"
   },
   "require-dev": {
     "phpunit/phpunit": "~7.0"
