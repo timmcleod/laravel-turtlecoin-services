@@ -43,7 +43,7 @@ Configuration notes:
 * Change the passwords to stronger passwords in `TC_WALLET_SERVICE_RPC_PASSWORD` and `TC_WALLET_PASSWORD`.
 * The wallet service (turtle-services) is bundled with this package. If you want to run the bundled wallet service, set `TC_WALLET_SERVICE_HOST` to `http://localhost`.
 * The location of the wallet file in the example above is suggested for development if you're using a Homestead vagrant box. The wallet service may fail to start if the file is located in the directory that your vagrant box shares with your OS (i.e. your project directory).
-* Be sure to set your wallet password before starting your wallet service, since the wallet will be created the first time the wallet service runs.
+* Be sure to set your wallet password before starting your wallet service, since the wallet needs to be created before the wallet service runs.
 
 Create a wallet container:
 ```
