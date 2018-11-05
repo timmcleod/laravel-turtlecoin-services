@@ -1,7 +1,9 @@
 # TurtleCoin Services for Laravel
 
-TurtleCoin Services for Laravel is a package that wraps the TurtleCoin JSON-RPC services. This package makes it
-quick and easy to get started with all of the TurtleCoin services (TurtleCoind and turtle-services).
+TurtleCoin Services is a package that wraps the TurtleCoin JSON-RPC services for Laravel. This package makes it
+easy to work with all of the TurtleCoin RPC APIs (TurtleCoind and turtle-services). The wallet services are bundled 
+with this package so that you can get started quickly right in your Homestead vagrant box. No need to download the 
+entire blockchain, just connect to any of the available public nodes (i.e. node.trtl.io).
 
 ---
 
