@@ -31,7 +31,7 @@ class TurtleCoinServiceProvider extends ServiceProvider
         // php artisan vendor:publish
         $this->publishes([
             __DIR__ . '/../../../config/turtlecoin.php' => config_path('turtlecoin.php'),
-        ]);
+        ], 'turtlecoin');
     }
 
     /**
